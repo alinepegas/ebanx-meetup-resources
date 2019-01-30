@@ -36,3 +36,8 @@ Deploy: release your code to the wild (production)
 - Make changes to your code and see them getting deployed to your Beanstalk environment
 - Create a webhook on Slack
 - Create lambda to post Beanstalk events to Slack
+
+## Resources
+- Lambda function to send SNS notifications to Slack: https://github.com/alinepegas/ebanx-meetup-resources/blob/master/lambda-sns-to-slack.js
+- Sample Ruby application: https://github.com/alinepegas/ebanx-meetup-resources/blob/master/ruby-passenger-v3.zip
+- Script to send memory and disk metrics to cloudwatch: https://github.com/alinepegas/ebanx-meetup-resources/blob/master/cloudwatch.config
