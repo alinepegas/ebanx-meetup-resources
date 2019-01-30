@@ -26,3 +26,13 @@ Deploy: release your code to the wild (production)
 - Monitoring: AWS CloudWatch
 - Developer Feedback: AWS Lambda and Slack
 
+## Step by step
+- Create Beanstalk environment on AWS Console
+- Create IAM user access keys with access to the environment just created
+- Have a GitHub repository with your code: https://github.com/alinepegas/eb-ruby-sample-app
+- Have a Travis CI account connected to your repository
+- Set up AWS credentials on Travis settings for the repository
+- Create a `.travis.yml` file in your repository with the specifications for Travis
+- Make changes to your code and see them getting deployed to your Beanstalk environment
+- Create a webhook on Slack
+- Create lambda to post Beanstalk events to Slack
