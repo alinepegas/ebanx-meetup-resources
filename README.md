@@ -16,13 +16,13 @@ Deploy: release your code to the wild (production)
 - Orchestration service
 - Support for Java, .NET, Node.js, PHP, Ruby, Python, Go, and Docker
 - Handles autoscaling and load balancing for you
-- You have complete control of the underlying resources
+- You have complete control of the underlying AWS resources: EC2, S3, RDS, etc.
 
 ## What we will build
 - Central repository: Github
 - Integration testing: Travis CI
-- Deployment tool: Travis CI
-- Production Environment: AWS Elastic Beanstalk
+- Deployment tool: Travis CI & AWS Elastic Beanstalk
+- Production Environment: AWS Elastic Beanstalk (EC2, ELB, SNS, etc.)
 - Monitoring: AWS CloudWatch
 - Developer Feedback: AWS Lambda and Slack
 
