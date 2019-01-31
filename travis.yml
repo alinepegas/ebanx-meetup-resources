@@ -1,0 +1,22 @@
+sudo: false
+
+language: ruby
+cache: bundler
+rvm:
+  - 2.6
+
+script:
+  - bundle exec rspec spec
+
+deploy:
+  - provider: elasticbeanstalk
+    skip_cleanup: true
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    region: "us-east-2"
+    app: "ebanx-meetup"
+    env: "ebanx-meetup-test"
+    # bucket name is always "elasticbeanstalk-REGION-ACCOUNT_NUMBER"
+    bucket_name: $BUCKET_NAME
+    on:
+      branch: master
